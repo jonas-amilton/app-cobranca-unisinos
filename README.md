@@ -36,7 +36,6 @@ O aplicativo de Cobrança de Água é um sistema desenvolvido para gerenciar as 
 - Endpoint POST para login.
 - Endpoint POST para logout.
 
-## Protótipo
 
 ## Protótipo
 
@@ -106,9 +105,6 @@ O aplicativo de Cobrança de Água é um sistema desenvolvido para gerenciar as 
 - Endpoint POST para login.
 - Endpoint POST para logout.
 
-## Protótipo
-
-(Inserir imagem ou link para o protótipo aqui)
 
 ## Como Usar o Aplicativo
 
