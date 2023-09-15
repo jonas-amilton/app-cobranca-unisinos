@@ -1,27 +1,99 @@
-# FirstProject
+Este projeto foi gerado com [Ionic CLI](https://ionicframework.com/docs/cli) 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+## Pré-requisitos
 
-## Development server
+Antes de começar, certifique-se de que você tenha o Node.js e o Ionic CLI instalados. Se não tiver, siga as instruções abaixo:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Instale o Node.js](https://nodejs.org/)
+- Instale o Ionic CLI globalmente:
 
-## Code scaffolding
+````
+npm install -g @ionic/cli
+````
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone este repositório:
 
-## Running unit tests
+````
+git clone https://github.com/jonas-amilton/app-cobranca-de-agua.git
+````
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+````
+cd app-cobranca-de-agua
+````
 
-## Running end-to-end tests
+2. Instale as dependências do projeto:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+````
+npm install
+````
 
-## Further help
+## Executando o servidor de desenvolvimento
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para iniciar um servidor de desenvolvimento, execute o seguinte comando:
+
+````
+ionic serve
+````
+
+
+Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo em seu navegador padrão. O aplicativo será automaticamente recarregado se você fizer alterações nos arquivos de origem.
+
+## Geração de Páginas e Componentes
+
+Para gerar novas páginas e componentes, você pode usar os comandos do Ionic CLI. Aqui estão alguns exemplos:
+
+- Gerar uma nova página:
+
+````
+ionic generate page nome-da-pagina
+````
+
+
+- Gerar um novo componente:
+
+````
+ionic generate component nome-do-componente
+````
+
+
+## Compilação
+
+Para compilar o projeto, use o seguinte comando:
+
+````
+ionic build
+````
+
+
+Os artefatos de compilação serão armazenados no diretório `/build`.
+
+## Execução de Testes
+
+Para executar testes unitários, você pode usar os comandos do Angular CLI. Por exemplo:
+
+- Executar testes unitários com Karma:
+
+````
+ng test
+````
+
+
+- Executar testes end-to-end (e2e) com Protractor (lembre-se de configurar e2e testing primeiro):
+
+````
+ng e2e
+````
+
+## Mais Ajuda
+
+Para obter mais ajuda sobre o Ionic CLI, use o seguinte comando:
+
+````
+ionic --help
+````
+
+
+Você também pode consultar a [documentação do Ionic CLI](https://ionicframework.com/docs/cli) para obter mais informações e referência de comandos.
