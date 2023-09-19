@@ -11,6 +11,5 @@ export class AppComponent {
     { title: 'Lista de Clientes', url: '/client-list', icon: 'list' },
     { title: 'Pagamento', url: '/payment', icon: 'card' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }
