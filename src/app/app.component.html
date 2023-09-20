@@ -31,6 +31,10 @@
           </ion-item>
         </ion-menu-toggle>
       </ion-list>
+      <ion-item>
+        <ion-icon style="margin-right: 1.4em" name="log-out-outline"></ion-icon>
+        <ion-label><a style="text-decoration: none; color: red;" href="/"> Logout </a> </ion-label>
+      </ion-item>
     </ion-content>
   </ion-menu>
   <div class="ion-page" id="main-content">
@@ -47,11 +51,7 @@
         <ion-img
           src="../assets/payment-bg.png"
           alt="imagem ilustrativa de pagamento"
-          style="
-            height: 100vh;
-            width: 100vw;
-            object-fit: cover;
-          "
+          style="height: 100vh; width: 100vw; object-fit: cover"
         ></ion-img>
       </ion-router-outlet>
     </ion-content>
