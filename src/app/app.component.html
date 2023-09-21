@@ -8,7 +8,7 @@
     <ion-content class="ion-padding">
       <ion-list id="inbox-list">
         <ion-list-header>Pagamento de Agua</ion-list-header>
-        <ion-note>contato@payment.com</ion-note>
+        <ion-note>{{ this.globalVariable.email }}</ion-note>
 
         <ion-menu-toggle
           auto-hide="false"
@@ -33,7 +33,7 @@
       </ion-list>
       <ion-item>
         <ion-icon style="margin-right: 1.2em" name="log-out-outline"></ion-icon>
-        <ion-label><a style="text-decoration: none; color: red;" href="/"> Logout </a> </ion-label>
+        <ion-label><a style="text-decoration: none; color: red;" href="/login"> Logout </a> </ion-label>
       </ion-item>
     </ion-content>
   </ion-menu>

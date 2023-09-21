@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content size="large" padding>
+  <ion-list>
+    <ion-item *ngFor="let customer of customers">
+      <ion-label id="{{customer.id}}">{{ customer.name }}</ion-label>
+      <ion-badge [color]="customer.paid ? 'success' : 'danger'"
+        >{{ customer.paid ? 'Pago' : 'Não pago' }}</ion-badge
+      >
+    </ion-item>
+  </ion-list>
+</ion-content>

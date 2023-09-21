@@ -16,19 +16,26 @@
       <ion-col size="12">
         <ion-item>
           <ion-input
-            label="Email"
-            type="email"
-            placeholder="email@domain.com"
-          ></ion-input> </ion-item
-      ></ion-col>
+            [(ngModel)]="userDetails.username"
+            label="Username"
+            type="username"
+          ></ion-input>
+        </ion-item>
+      </ion-col>
       <ion-col size="12">
         <ion-item>
           <ion-input
+            [(ngModel)]="userDetails.password"
             label="Senha"
             type="password"
-            value="password"
           ></ion-input>
         </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-title style="color: red;" *ngIf="!sucesso" size="large">{{ this.mensagem }}</ion-title>
+      <ion-col size="12">
+        <ion-button type="submit" expand="full" (click)="login()">Login</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -1,61 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Lista de Clientes</ion-title>
+    <ion-title>Lista de Usuários</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Lista de Clientes</ion-title>
+      <ion-title size="large">Lista de Usuários</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col size="12">
-        <ion-item>
-          <ion-checkbox justify="space-between"
-            >Jonathan</ion-checkbox
-          >
-        </ion-item>
-      </ion-col>
-      <ion-col size="12">
-        <ion-item>
-          <ion-checkbox justify="space-between"
-            >Jonas</ion-checkbox
-          >
-        </ion-item>
-      </ion-col>
-      <ion-col size="12">
-        <ion-item>
-          <ion-checkbox justify="space-between"
-            >Jean</ion-checkbox
-          >
-        </ion-item>
-      </ion-col>
-
-      <ion-col size="12">
-        <ion-item>
-          <ion-checkbox justify="space-between"
-            >Rodrigo</ion-checkbox
-          >
-        </ion-item>
-      </ion-col>
-      <ion-col size="12">
-        <ion-item>
-          <ion-checkbox justify="space-between"
-            >Elisandro</ion-checkbox
-          >
-        </ion-item>
-      </ion-col>
-      <ion-col size="12">
-        <ion-item>
-          <ion-checkbox justify="space-between"
-            >Welington</ion-checkbox
-          >
-        </ion-item>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <ion-item id="{{customer.id}}" *ngFor="let customer of customers">
+        <ion-label>{{ customer.name }}</ion-label>
+        <ion-button color="danger" (click)="deleteCustomer(customer.id)">Excluir</ion-button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
 </ion-content>

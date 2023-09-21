@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'app-cobranca-de-agua',
   webDir: 'www',
   server: {
-    androidScheme: 'https'
+    androidScheme: "https"
   }
 };
 

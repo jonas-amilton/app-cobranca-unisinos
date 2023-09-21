@@ -1,49 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Pagamento</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Pagamento</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-grid>
+  ...
+  <ion-grid *ngIf="!user.paid">
     <ion-row>
       <ion-col size="12">
-        <ion-card style="text-align: center;">
+        <ion-card style="text-align: center">
           <ion-card-header>
-            <ion-card-title>Nome do Usuário: Jean</ion-card-title>
-            <ion-card-subtitle
-              >Data de Vencimento: 30 de outubro de 2023</ion-card-subtitle
-            >
+            <ion-card-title>Nome do Usuário: {{ user.name }}</ion-card-title>
+            <ion-card-subtitle>
+              Data de Vencimento: 30 de outubro de 2023
+              </ion-card-subtitle>
           </ion-card-header>
 
           <ion-card-content>
-            O valor total a pagar é R$ 100,00.
+            O valor total a pagar é R$ 87,54.
           </ion-card-content>
 
-          <ion-button shape="round">Pagar Agora</ion-button>
-        </ion-card>
-      </ion-col>
-
-      <ion-col size="12">
-        <ion-card style="text-align: center;">
-          <ion-card-header>
-            <ion-card-title>Nome do Usuário: Jean</ion-card-title>
-            <ion-card-subtitle
-              >Data de Vencimento: 30 de setembro de 2023</ion-card-subtitle
-            >
-          </ion-card-header>
-
-          <ion-card-content>
-            (pagamento atrasado) | O valor total a pagar é R$ 150,00.
-          </ion-card-content>
-
-          <ion-button shape="round">Pagar Agora</ion-button>
+          <ion-button shape="round" (click)="payBill()">Pagar Agora</ion-button>
         </ion-card>
       </ion-col>
     </ion-row>
